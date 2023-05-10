@@ -4,12 +4,12 @@
 
 
 class Bus:
-    def __init__(self, brand='no name', price=0, number=0):
+    def __init__(self, brand='no name', price=0, number=0000):
         self.__brand = brand    # protected
         self.__price = price    # protected
         self.__number = number  # protected
 
-    def get__brand(self):
+    def get_brand(self):
         return self.__brand
 
     def set_brand(self, name):
@@ -24,7 +24,7 @@ class Bus:
         return self.__price
 
     def set_price(self, name):
-        self.__number = name
+        self.__price = name
 
     # def __del__(self):
     #     print(f"destructor for {self.brand}")
@@ -36,7 +36,11 @@ class Bus:
 if __name__ == "__main__":
     bus = Bus()
     # bus.price = 12000
-    # print(bus.price)
+    # bus.brand = "VAZ"
+    # bus.number = 7777
+    # print(bus.price, bus.brand, bus.number)
 
-    bus.set_price(12000)
-    print(bus.get_price())
+    bus.set_price(5500)
+    bus.set_brand("Ferrari")
+    bus.set_number(3333)
+    print(bus.get_brand(), bus.get_price(),bus.get_number())

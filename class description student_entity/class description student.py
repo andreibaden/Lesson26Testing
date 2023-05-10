@@ -23,10 +23,10 @@ class Student:
     def get_items(self):
         return self.__marks.items()
 
-    def __find_max_index(self, ls):
+    def find_max_index(self, ls):
         pass
 
-    def __find_min_index(self, ls):
+    def find_min_index(self, ls):
         pass
 
     def swap_max_min_elements(self, ls):
@@ -48,7 +48,8 @@ if __name__ == "__main__":
     st.add(99)
     st.add(100)
 
-    # st.add(10, "math")
+    # st.id = 0
 
     print(st.get_marks())
     pprint.pprint(st.get_items())
+    print(st.swap_max_min_elements())
